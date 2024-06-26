@@ -6,21 +6,6 @@ import Socials from "../components/Socials";
 import { fadeIn } from "../variants";
 
 
-import Layout from '../components/Layout';
-import AdvancedAnimations from '../components/AdvancedAnimations';
-
-export default function Home() {
-  return (
-    <Layout title="Ben Belaouedj - Portfolio">
-      <div className="container mx-auto py-12">
-        <h1 className="text-4xl font-bold text-center mb-8">Bienvenue sur mon portfolio</h1>
-        <AdvancedAnimations />
-        {/* Vous pouvez ajouter d'autres sections ou composants ici */}
-      </div>
-    </Layout>
-  );
-}
-
 
 const Home = () => {
   return (
