@@ -47,7 +47,7 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
+        title: "zebi",
         stage: "2011 - 2012",
       },
       {
