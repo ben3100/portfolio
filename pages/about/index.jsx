@@ -1,89 +1,94 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaServer, FaLaptopCode, FaShieldAlt, FaDatabase, FaNetworkWired, FaCloud, FaEnvelope, FaUserShield, FaProjectDiagram } from "react-icons/fa";
+import {
+  FaCss3,
+  FaFigma,
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaWordpress, // Assurez-vous que cette ligne est présente
+} from "react-icons/fa";
+import {
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiFramer,
+  SiNextdotjs,
+} from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
-import Socials from "../../components/Socials"; // Assurer l'importation du composant Socials
+import Socials from "../../components/Socials";
 import { fadeIn } from "../../variants";
 
 //  data
 export const aboutData = [
   {
-    title: "Systems Administration",
+    title: "skills",
     info: [
       {
-        title: "Windows Server & GNU/Linux",
-        icons: [FaServer],
+        title: "Systems",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
       },
       {
         title: "Virtualization",
-        icons: [FaCloud],
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Linux Services",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Development",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Security",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Backup and Restoration",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
       },
     ],
   },
   {
-    title: "Web Development",
+    title: "experience",
     info: [
       {
-        title: "HTML, CSS, JavaScript, PHP",
-        icons: [FaLaptopCode],
+        title: "Auto-entrepreneur, E-commerce",
+        stage: "2021",
       },
       {
-        title: "CMS: WordPress, Odoo",
-        icons: [FaWordpress],
+        title: "Freelance Développeur Web",
+        stage: "2018 – 2020",
+      },
+      {
+        title: "Développeur Web & Multimédia, 111 RENT CAR",
+        stage: "2017",
+      },
+      {
+        title: "Développeur Web & Webmaster, CSRICTED UMAB",
+        stage: "2016",
       },
     ],
   },
   {
-    title: "Security",
+    title: "credentials",
     info: [
       {
-        title: "SSL, IPSec, SSH, Firewalls",
-        icons: [FaShieldAlt],
+        title: "Technicien Supérieur Systèmes et Réseaux (LDNR FORMATION)",
+        stage: "2022 – 2023",
       },
       {
-        title: "SIEM, IDS/IPS",
-        icons: [FaUserShield],
-      },
-    ],
-  },
-  {
-    title: "Backup and Restoration",
-    info: [
-      {
-        title: "Veeam, Backup Exec, Acronis",
-        icons: [FaDatabase],
-      },
-    ],
-  },
-  {
-    title: "Network Management",
-    info: [
-      {
-        title: "Routing, VLAN, ACL, DNS, DHCP",
-        icons: [FaNetworkWired],
+        title: "Développeur web et multimédia (Institut Supérieur Khalil Zyat)",
+        stage: "2014 – 2016",
       },
       {
-        title: "Active Directory",
-        icons: [FaProjectDiagram],
+        title: "IBM Cybersecurity Analyst",
+        stage: "",
       },
-    ],
-  },
-  {
-    title: "Email Deployment",
-    info: [
       {
-        title: "Zimbra",
-        icons: [FaEnvelope],
-      },
-    ],
-  },
-  {
-    title: "Learning Platforms",
-    info: [
-      {
-        title: "Moodle",
-        icons: [FaProjectDiagram],
+        title: "Architecting Solutions on AWS",
+        stage: "",
       },
     ],
   },
