@@ -2,17 +2,39 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   FaCss3,
-  FaFigma,
   FaHtml5,
   FaJs,
   FaReact,
   FaWordpress,
+  FaWindows,
+  FaLinux,
+  FaUbuntu,
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAdobexd,
   SiFramer,
   SiNextdotjs,
+  SiVirtualbox,
+  SiVmware,
+  SiKubernetes,
+  SiNginx,
+  SiApache,
+  SiMysql,
+  SiPostgresql,
+  SiRedis,
+  SiMongodb,
+  SiAnsible,
+  SiTerraform,
+  SiJenkins,
+  SiPrometheus,
+  SiGrafana,
+  SiGitlab,
+  SiGithub,
+  SiGit,
+  SiZabbix,
+  SiWindows,
 } from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -26,27 +48,27 @@ export const aboutData = [
     info: [
       {
         title: "Systems",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [FaWindows, FaLinux, FaUbuntu, SiNginx, SiApache, SiMysql, SiPostgresql, SiRedis, SiMongodb],
       },
       {
         title: "Virtualization",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [SiVirtualbox, SiVmware, FaDocker, SiKubernetes],
       },
       {
         title: "Linux Services",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [SiNginx, SiApache, SiMysql, SiPostgresql, SiRedis, SiMongodb],
       },
       {
         title: "Development",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, FaWordpress],
       },
       {
         title: "Security",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [SiAnsible, SiTerraform, SiJenkins, SiPrometheus, SiGrafana, SiZabbix],
       },
       {
         title: "Backup and Restoration",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [SiGitlab, SiGithub, SiGit],
       },
     ],
   },
@@ -100,17 +122,6 @@ const About = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
-
-      {/* avatar img */}
-      <motion.div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
-      >
-        <Avatar />
-      </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
@@ -179,6 +190,17 @@ const About = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* avatar img */}
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="hidden xl:flex absolute bottom-0 -right-[370px]"
+        >
+          <Avatar />
+        </motion.div>
       </div>
     </div>
   );
