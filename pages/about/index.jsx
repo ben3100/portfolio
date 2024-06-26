@@ -141,8 +141,7 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Création de <span className="text-accent">solutions innovantes</span> grâce à mon expertise.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -150,9 +149,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            Avec plus de dix ans d'expérience, j'ai transformé des idées en réalité, en fournissant des solutions innovantes pour des agences, des startups et des entreprises. Mon parcours en tant que développeur comprend le travail à distance, le conseil et la collaboration sur divers produits numériques pour les marchés professionnels et grand public.
           </motion.p>
 
           <motion.div
@@ -167,7 +164,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience.
+                  Années d'expérience.
                 </div>
               </div>
 
@@ -176,7 +173,7 @@ const About = () => {
                   <CountUp start={0} end={250} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients.
+                  Clients satisfaits.
                 </div>
               </div>
 
@@ -185,7 +182,7 @@ const About = () => {
                   <CountUp start={0} end={650} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects.
+                  Projets réalisés.
                 </div>
               </div>
 
@@ -194,7 +191,7 @@ const About = () => {
                   <CountUp start={0} end={8} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards.
+                  Récompenses obtenues.
                 </div>
               </div>
             </div>
