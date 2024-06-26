@@ -4,6 +4,19 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import Socials from "../components/Socials";
 import { fadeIn } from "../variants";
+import Layout from '../components/Layout';
+import AdvancedAnimations from '../components/AdvancedAnimations';
+
+export default function Home() {
+  return (
+    <Layout title="Ben Belaouedj - Portfolio">
+      <div>
+        {/* Contenu de la page d'accueil */}
+        <AdvancedAnimations />
+      </div>
+    </Layout>
+  );
+}
 
 const Home = () => {
   return (
