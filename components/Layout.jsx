@@ -19,10 +19,10 @@ const Layout = ({ children }) => {
     >
       {/* metadata */}
       <Head>
-        <title>Ethan Smith | Portfolio</title>
+        <title>Ben Belaouedj</title>
         <meta
           name="description"
-          content="Ethan Smith is a Full-stack web developer with 10+ years of experience."
+          content="Ben Belaouedj, spécialiste en développement web et systèmes réseaux."
         />
         <meta
           name="keywords"
