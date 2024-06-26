@@ -18,6 +18,7 @@ import {
 
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
+import Socials from "../../components/Socials"; // Assurer l'importation du composant Socials
 import { fadeIn } from "../../variants";
 
 //  data
@@ -135,8 +136,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[600px] mx-auto xl:mx-0 mb-6 xl:mb-12"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione est,
-            autem ipsa! Praesentium nam ex consectetur.
+            Passionné par la technologie et spécialisé dans les systèmes et réseaux, j'ai une expérience diversifiée en administration de systèmes, virtualisation, sécurité informatique, et développement web.
           </motion.p>
 
           <motion.div
