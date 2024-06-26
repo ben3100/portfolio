@@ -26,7 +26,7 @@ export const aboutData = [
     info: [
       {
         title: "Systems",
-        icons: [],
+        icons: [Windows Server, GNU/Linux Debian ],
       },
       {
         title: "Virtualization",
