@@ -20,8 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Ben Belaouedj <br />
+            <span className="text-accent">Technicien Systèmes & Réseaux</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -32,15 +32,14 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            Passionné par la technologie et spécialisé dans les systèmes et réseaux, j'ai une expérience diversifiée en administration de systèmes, virtualisation, sécurité informatique, et développement web. Je suis dédié à transformer des idées en réalité numérique.
           </motion.p>
 
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
+            <a href="/path/to/CV-Ben-belaouedj.pdf" className="btn">
+              Télécharger CV
+            </a>
           </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -49,7 +48,9 @@ const Home = () => {
             exit="hidden"
             className="hidden xl:flex"
           >
-            <ProjectsBtn />
+            <a href="/path/to/CV-Ben-belaouedj.pdf" className="btn">
+              Télécharger CV
+            </a>
           </motion.div>
         </div>
       </div>
