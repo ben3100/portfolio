@@ -85,7 +85,7 @@ export const aboutData = [
         stage: "2009",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+        title: "dzzdz",
         stage: "2006",
       },
     ],
