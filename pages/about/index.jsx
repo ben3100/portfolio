@@ -33,7 +33,6 @@ import {
   SiGitlab,
   SiGithub,
   SiGit,
-  // SiZabbix, // Assurez-vous que cette icône existe
 } from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -119,11 +118,11 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-16 md:py-32 text-center xl:text-left">
       <Circles />
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 px-4 md:px-8">
+        <div className="flex-1 flex flex-col justify-center mb-10 xl:mb-0">
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -148,7 +147,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+            className="flex flex-col w-full h-[480px] md:max-h-[600px] xl:max-w-[48%]"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemI) => (
@@ -165,7 +164,7 @@ const About = () => {
               ))}
             </div>
 
-            <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+            <div className="py-2 xl:py-6 flex flex-col gap-y-4 items-center xl:items-start overflow-auto">
               {aboutData[index].info.map((item, itemI) => (
                 <div
                   key={itemI}
@@ -196,7 +195,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="hidden xl:flex absolute bottom-0 -right-[370px]"
+          className="w-full max-w-xs mx-auto xl:max-w-none xl:mx-0 xl:relative xl:absolute xl:bottom-0 xl:right-0"
         >
           <Avatar />
         </motion.div>
