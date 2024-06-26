@@ -1,67 +1,17 @@
-import Link from "next/link";
-
-import {
-  RiYoutubeLine,
-  RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
-  RiGithubLine,
-  RiPinterestLine,
-} from "react-icons/ri";
-
-export const socialData = [
-  {
-    name: "YouTube",
-    link: "https://youtube.com",
-    Icon: RiYoutubeLine,
-  },
-  {
-    name: "Instagram",
-    link: "https://instagram.com",
-    Icon: RiInstagramLine,
-  },
-  {
-    name: "Facebook",
-    link: "https://facebook.com",
-    Icon: RiFacebookLine,
-  },
-  {
-    name: "Dribbble",
-    link: "https://dribbble.com",
-    Icon: RiDribbbleLine,
-  },
-  {
-    name: "Pinterest",
-    link: "https://pinterest.com",
-    Icon: RiPinterestLine,
-  },
-  {
-    name: "Github",
-    link: "https://github.com/sanidhyy/modern-portfolio",
-    Icon: RiGithubLine,
-  },
-];
+import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
-      {socialData.map((social, i) => (
-        <Link
-          key={i}
-          title={social.name}
-          href={social.link}
-          target="_blank"
-          rel="noreferrer noopener"
-          className={`${
-            social.name === "Github"
-              ? "bg-accent rounded-full p-[5px] hover:text-white"
-              : "hover:text-accent"
-          } transition-all duration-300`}
-        >
-          <social.Icon aria-hidden />
-          <span className="sr-only">{social.name}</span>
-        </Link>
-      ))}
+    <div className="flex space-x-6">
+      <a href="https://www.linkedin.com/in/ben-belaouedj/" className="text-accent" aria-label="LinkedIn">
+        <FaLinkedin size={24} />
+      </a>
+      <a href="https://github.com/ben3100" className="text-accent" aria-label="GitHub">
+        <FaGithub size={24} />
+      </a>
+      <a href="https://ben-belaouedj.fr" className="text-accent" aria-label="Website">
+        <FaGlobe size={24} />
+      </a>
     </div>
   );
 };
