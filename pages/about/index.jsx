@@ -1,21 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import CountUp from "react-countup";
-import {
-  FaCss3,
-  FaFigma,
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaWordpress,
-} from "react-icons/fa";
-import {
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiFramer,
-  SiNextdotjs,
-} from "react-icons/si";
-
+import { FaServer, FaLaptopCode, FaShieldAlt, FaDatabase, FaNetworkWired, FaCloud, FaEnvelope, FaUserShield, FaProjectDiagram } from "react-icons/fa";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import Socials from "../../components/Socials"; // Assurer l'importation du composant Socials
@@ -24,77 +9,81 @@ import { fadeIn } from "../../variants";
 //  data
 export const aboutData = [
   {
-    title: "skills",
+    title: "Systems Administration",
     info: [
       {
-        title: "Systems",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        title: "Windows Server & GNU/Linux",
+        icons: [FaServer],
       },
       {
         title: "Virtualization",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
-      },
-      {
-        title: "Linux Services",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
-      },
-      {
-        title: "Development",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
-      },
-      {
-        title: "Security",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
-      },
-      {
-        title: "Backup and Restoration",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [FaCloud],
       },
     ],
   },
   {
-    title: "experience",
+    title: "Web Development",
     info: [
       {
-        title: "Employé polyvalent, EnergyClean, Ajnet, Elior",
-        stage: "2021 – 2022",
+        title: "HTML, CSS, JavaScript, PHP",
+        icons: [FaLaptopCode],
       },
       {
-        title: "Auto-entrepreneur, E-commerce",
-        stage: "2021",
-      },
-      {
-        title: "Freelance Développeur Web",
-        stage: "2018 – 2020",
-      },
-      {
-        title: "Développeur Web & Multimédia, 111 RENT CAR",
-        stage: "2017",
-      },
-      {
-        title: "Développeur Web & Webmaster, CSRICTED UMAB",
-        stage: "2016",
+        title: "CMS: WordPress, Odoo",
+        icons: [FaWordpress],
       },
     ],
   },
   {
-    title: "credentials",
+    title: "Security",
     info: [
       {
-        title: "Technicien Supérieur Systèmes et Réseaux (LDNR FORMATION)",
-        stage: "2022 – 2023",
+        title: "SSL, IPSec, SSH, Firewalls",
+        icons: [FaShieldAlt],
       },
       {
-        title: "Développeur web et multimédia (Institut Supérieur Khalil Zyat)",
-        stage: "2014 – 2016",
+        title: "SIEM, IDS/IPS",
+        icons: [FaUserShield],
+      },
+    ],
+  },
+  {
+    title: "Backup and Restoration",
+    info: [
+      {
+        title: "Veeam, Backup Exec, Acronis",
+        icons: [FaDatabase],
+      },
+    ],
+  },
+  {
+    title: "Network Management",
+    info: [
+      {
+        title: "Routing, VLAN, ACL, DNS, DHCP",
+        icons: [FaNetworkWired],
       },
       {
-        title: "IBM Cybersecurity Analyst",
-        stage: "",
+        title: "Active Directory",
+        icons: [FaProjectDiagram],
       },
+    ],
+  },
+  {
+    title: "Email Deployment",
+    info: [
       {
-        title: "Architecting Solutions on AWS",
-        stage: "",
+        title: "Zimbra",
+        icons: [FaEnvelope],
+      },
+    ],
+  },
+  {
+    title: "Learning Platforms",
+    info: [
+      {
+        title: "Moodle",
+        icons: [FaProjectDiagram],
       },
     ],
   },
@@ -222,10 +211,10 @@ const About = () => {
                 <div className="flex gap-x-4">
                   {/* icons */}
                   {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
+                      <div key={iconI} className="text-2xl text-white">
+                        <Icon />
+                      </div>
+                    ))}
                 </div>
               </div>
             ))}
