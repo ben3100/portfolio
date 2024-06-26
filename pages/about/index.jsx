@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import CountUp from "react-countup";
 import {
   FaCss3,
   FaHtml5,
@@ -117,11 +118,10 @@ export const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
 
-return (
+  return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
 
-      {/* avatar img */}
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
@@ -133,7 +133,6 @@ return (
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -156,7 +155,6 @@ return (
             collabrated on digital products for business and consumer use.
           </motion.p>
 
-          {/* counters */}
           <motion.div
             variants={fadeIn("right", 0.6)}
             initial="hidden"
@@ -164,7 +162,6 @@ return (
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={10} duration={5} />
@@ -174,7 +171,6 @@ return (
                 </div>
               </div>
 
-              {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={250} duration={5} />
@@ -184,7 +180,6 @@ return (
                 </div>
               </div>
 
-              {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={650} duration={5} />
@@ -194,7 +189,6 @@ return (
                 </div>
               </div>
 
-              {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={8} duration={5} />
@@ -207,7 +201,6 @@ return (
           </motion.div>
         </div>
 
-        {/* info */}
         <motion.div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
@@ -236,13 +229,11 @@ return (
                 key={itemI}
                 className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
               >
-                {/* title */}
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
 
                 <div className="flex gap-x-4">
-                  {/* icons */}
                   {item.icons?.map((Icon, iconI) => (
                     <div key={iconI} className="text-2xl text-white">
                       <Icon />
