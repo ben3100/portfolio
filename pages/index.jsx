@@ -1,89 +1,233 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import {
+  FaCss3,
+  FaFigma,
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaWordpress, // Assurez-vous que cette ligne est présente
+} from "react-icons/fa";
+import {
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiFramer,
+  SiNextdotjs,
+} from "react-icons/si";
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+import Socials from "../../components/Socials";
+import { fadeIn } from "../../variants";
 
-import ParticlesContainer from "../components/ParticlesContainer";
-import ProjectsBtn from "../components/ProjectsBtn";
-import Avatar from "../components/Avatar";
-import Socials from "../components/Socials"; // Assurer l'importation du composant Socials
+//  data
+export const aboutData = [
+  {
+    title: "skills",
+    info: [
+      {
+        title: "Systems",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Virtualization",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Linux Services",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Development",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Security",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+      {
+        title: "Backup and Restoration",
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+      },
+    ],
+  },
+  {
+    title: "experience",
+    info: [
+      {
+        title: "Auto-entrepreneur, E-commerce",
+        stage: "2021",
+      },
+      {
+        title: "Freelance Développeur Web",
+        stage: "2018 – 2020",
+      },
+      {
+        title: "Développeur Web & Multimédia, 111 RENT CAR",
+        stage: "2017",
+      },
+      {
+        title: "Développeur Web & Webmaster, CSRICTED UMAB",
+        stage: "2016",
+      },
+    ],
+  },
+  {
+    title: "credentials",
+    info: [
+      {
+        title: "Technicien Supérieur Systèmes et Réseaux (LDNR FORMATION)",
+        stage: "2022 – 2023",
+      },
+      {
+        title: "Développeur web et multimédia (Institut Supérieur Khalil Zyat)",
+        stage: "2014 – 2016",
+      },
+      {
+        title: "IBM Cybersecurity Analyst",
+        stage: "",
+      },
+      {
+        title: "Architecting Solutions on AWS",
+        stage: "",
+      },
+    ],
+  },
+];
 
-import { fadeIn } from "../variants";
+const About = () => {
+  const [index, setIndex] = useState(0);
 
-const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
-      {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
-          {/* title */}
-          <motion.h1
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h1"
-          >
-            Ben Belaouedj <br />
-            <span className="text-accent">Technicien Systèmes & Réseaux</span>
-          </motion.h1>
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+      <Circles />
 
-          {/* subtitle */}
-          <motion.p
-            variants={fadeIn("down", 0.3)}
+      {/* avatar img */}
+      <motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+      >
+        <Avatar />
+      </motion.div>
+
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.h2
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="h2"
           >
-            Passionné par la technologie et spécialisé dans les systèmes et réseaux, j'ai une expérience diversifiée en administration de systèmes, virtualisation, sécurité informatique, et développement web. Je suis dédié à transformer des idées en réalité numérique.
+            About Me
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[600px] mx-auto xl:mx-0 mb-6 xl:mb-12"
+          >
+            Passionné par la technologie et spécialisé dans les systèmes et réseaux, j'ai une expérience diversifiée en administration de systèmes, virtualisation, sécurité informatique, et développement web.
           </motion.p>
 
-          {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
-            <a href="/path/to/CV-Ben-belaouedj.pdf" className="btn">
-              Télécharger CV
-            </a>
-          </div>
           <motion.div
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
           >
-            <a href="/path/to/CV-Ben-belaouedj.pdf" className="btn">
-              Télécharger CV
-            </a>
+            <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+              {aboutData.map((item, itemI) => (
+                <div
+                  key={itemI}
+                  className={`${
+                    index === itemI &&
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  onClick={() => setIndex(itemI)}
+                >
+                  {item.title}
+                </div>
+              ))}
+            </div>
+
+            <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+              {aboutData[index].info.map((item, itemI) => (
+                <div
+                  key={itemI}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                >
+                  {/* title */}
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
+
+                  <div className="flex gap-x-4">
+                    {/* icons */}
+                    {item.icons?.map((Icon, iconI) => (
+                      <div key={iconI} className="text-2xl text-white">
+                        <Icon />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </motion.div>
-
-          {/* socials */}
-          <Socials />
         </div>
-      </div>
-      {/* image */}
-      <div className="w-[1280px] h-full absolute right-0 bottom-0">
-        {/* bg img */}
-        <div
-          role="img"
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-          aria-hidden
-        />
 
-        {/* particles */}
-        <ParticlesContainer />
-
-        {/* avatar */}
         <motion.div
-          variants={fadeIn("up", 0.5)}
+          variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
-          <Avatar />
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+            {aboutData.map((item, itemI) => (
+              <div
+                key={itemI}
+                className={`${
+                  index === itemI &&
+                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                onClick={() => setIndex(itemI)}
+              >
+                {item.title}
+              </div>
+            ))}
+          </div>
+
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+            {aboutData[index].info.map((item, itemI) => (
+              <div
+                key={itemI}
+                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+              >
+                {/* title */}
+                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="hidden md:flex">-</div>
+                <div>{item.stage}</div>
+
+                <div className="flex gap-x-4">
+                  {/* icons */}
+                  {item.icons?.map((Icon, iconI) => (
+                      <div key={iconI} className="text-2xl text-white">
+                        <Icon />
+                      </div>
+                    ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default About;
