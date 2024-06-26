@@ -33,8 +33,7 @@ import {
   SiGitlab,
   SiGithub,
   SiGit,
-  SiZabbix,
-  SiWindows,
+  // SiZabbix, // Assurez-vous que cette icône existe
 } from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -64,7 +63,7 @@ export const aboutData = [
       },
       {
         title: "Security",
-        icons: [SiAnsible, SiTerraform, SiJenkins, SiPrometheus, SiGrafana, SiZabbix],
+        icons: [SiAnsible, SiTerraform, SiJenkins, SiPrometheus, SiGrafana],
       },
       {
         title: "Backup and Restoration",
