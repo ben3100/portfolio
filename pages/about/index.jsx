@@ -173,9 +173,9 @@ const About = () => {
                   {/* title */}
                   <div className="font-light w-full md:w-auto mb-2 md:mb-0 md:mr-4">{item.title}</div>
                   <div className="hidden md:flex">-</div>
-                  <div className="w-full md:w-auto">{item.stage}</div>
+                  <div className="w-full md:w-auto md:ml-2">{item.stage}</div>
 
-                  <div className="flex flex-wrap gap-x-4 mt-2 md:mt-0">
+                  <div className="flex flex-wrap gap-x-4 mt-2 md:mt-0 md:ml-2">
                     {/* icons */}
                     {item.icons?.map((Icon, iconI) => (
                       <div key={iconI} className="text-2xl text-white">
