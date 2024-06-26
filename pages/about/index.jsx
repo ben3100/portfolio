@@ -6,7 +6,7 @@ import {
   FaHtml5,
   FaJs,
   FaReact,
-  FaWordpress, // Assurez-vous que cette ligne est présente
+  FaWordpress,
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
@@ -19,7 +19,7 @@ import Circles from "../../components/Circles";
 import Socials from "../../components/Socials";
 import { fadeIn } from "../../variants";
 
-//  data
+// Data
 export const aboutData = [
   {
     title: "skills",
@@ -216,10 +216,10 @@ const About = () => {
                 <div className="flex gap-x-4">
                   {/* icons */}
                   {item.icons?.map((Icon, iconI) => (
-                      <div key={iconI} className="text-2xl text-white">
-                        <Icon />
-                      </div>
-                    ))}
+                    <div key={iconI} className="text-2xl text-white">
+                      <Icon />
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
