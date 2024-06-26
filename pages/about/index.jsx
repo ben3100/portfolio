@@ -26,27 +26,27 @@ export const aboutData = [
     info: [
       {
         title: "Systems",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [],
       },
       {
         title: "Virtualization",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [],
       },
       {
         title: "Linux Services",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [],
       },
       {
         title: "Development",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [ FaWordpress],
       },
       {
         title: "Security",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [],
       },
       {
         title: "Backup and Restoration",
-        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaWordpress],
+        icons: [],
       },
     ],
   },
