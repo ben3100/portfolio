@@ -1,3 +1,12 @@
 <svg width="270" height="34" viewBox="0 0 270 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <text x="10" y="25" font-family="Arial" font-size="20" fill="white">Ben Belaouedj</text>
+  <style>
+    .title {
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      fill: white;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+  </style>
+  <text x="10" y="25" class="title">Ben Belaouedj</text>
 </svg>
