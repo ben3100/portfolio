@@ -5,7 +5,7 @@ const Avatar = () => {
     <img 
       src="/avatar.png" 
       alt="Ben Belaouedj" 
-      className="rounded-full w-40 h-40 xl:w-60 xl:h-60"
+      className="rounded-full w-100 h-100 xl:w-100 xl:h-100"
     />
   );
 };
