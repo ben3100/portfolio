@@ -117,6 +117,8 @@ const Contact = () => {
             <p>Email: <a href="mailto:work.bendehiba@gmail.com" className="text-accent">work.bendehiba@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/ben-belaouedj/" className="text-accent">ben-belaouedj</a></p>
             <p>Téléphone: <a href="tel:0767902055" className="text-accent">0767902055</a></p>
+            <p>Website: <a href="https://ben-belaouedj.fr" className="text-accent">ben-belaouedj.fr</a></p>
+            <p>GitHub: <a href="https://github.com/ben3100" className="text-accent">ben3100 GitHub</a></p>
           </div>
         </div>
       </div>
