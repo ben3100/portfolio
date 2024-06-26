@@ -149,7 +149,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Avec plus de dix ans d'expérience, j'ai transformé des idées en réalité, en fournissant des solutions innovantes pour des agences, des startups et des entreprises. Mon parcours en tant que développeur comprend le travail à distance, le conseil et la collaboration sur divers produits numériques pour les marchés professionnels et grand public.
+            Avec plus de cinq ans d'expérience, j'ai transformé des idées en réalité, en fournissant des solutions innovantes pour des agences, des startups et des entreprises. Mon parcours en tant que développeur comprend le travail à distance, le conseil et la collaboration sur divers produits numériques pour les marchés professionnels et grand public.
           </motion.p>
 
           <motion.div
@@ -161,7 +161,7 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
+                  <CountUp start={0} end={5} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Années d'expérience.
@@ -170,7 +170,7 @@ const About = () => {
 
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={60} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Clients satisfaits.
@@ -179,21 +179,13 @@ const About = () => {
 
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={35} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Projets réalisés.
                 </div>
               </div>
 
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Récompenses obtenues.
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>
