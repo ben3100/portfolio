@@ -147,7 +147,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full xl:max-w-[48%] h-auto"
+            className="w-full xl:max-w-[60%] h-auto"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemI) => (
@@ -164,18 +164,19 @@ const About = () => {
               ))}
             </div>
 
-            <div className="py-2 xl:py-6 flex flex-col gap-y-4 items-center xl:items-start overflow-auto">
+            <div className="py-2 xl:py-6 flex flex-col gap-y-4 items-start overflow-auto">
               {aboutData[index].info.map((item, itemI) => (
                 <div
                   key={itemI}
-                  className="flex flex-row flex-wrap items-center text-center text-white/60 mb-4"
+                  className="w-full flex flex-col md:flex-row items-start text-left text-white/60 mb-4"
                 >
-                  {/* title */}
-                  <div className="font-light w-full md:w-auto mb-2 md:mb-0 md:mr-4">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div className="w-full md:w-auto md:ml-2">{item.stage}</div>
-
-                  <div className="flex flex-wrap gap-x-4 mt-2 md:mt-0 md:ml-2">
+                  <div className="flex flex-col md:flex-row md:items-center w-full">
+                    {/* title */}
+                    <div className="font-light md:mr-4">{item.title}</div>
+                    <div className="hidden md:flex">-</div>
+                    <div className="md:ml-4">{item.stage}</div>
+                  </div>
+                  <div className="flex gap-x-4 mt-2 md:mt-0 md:ml-4">
                     {/* icons */}
                     {item.icons?.map((Icon, iconI) => (
                       <div key={iconI} className="text-2xl text-white">
