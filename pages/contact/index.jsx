@@ -111,6 +111,13 @@ const Contact = () => {
               />
             </button>
           </motion.form>
+
+          {/* contact information */}
+          <div className="mt-12 text-center text-white/60">
+            <p>Email: <a href="mailto:work.bendehiba@gmail.com" className="text-accent">work.bendehiba@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ben-belaouedj/" className="text-accent">ben-belaouedj</a></p>
+            <p>Téléphone: <a href="tel:0767902055" className="text-accent">0767902055</a></p>
+          </div>
         </div>
       </div>
     </div>
