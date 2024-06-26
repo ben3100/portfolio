@@ -147,7 +147,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full h-[480px] md:max-h-[600px] xl:max-w-[70%]"
+            className="flex flex-col w-full xl:max-w-[48%] h-auto"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemI) => (
@@ -168,14 +168,14 @@ const About = () => {
               {aboutData[index].info.map((item, itemI) => (
                 <div
                   key={itemI}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                  className="flex flex-row flex-wrap items-center text-center text-white/60 mb-4"
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="font-light w-full md:w-auto mb-2 md:mb-0 md:mr-4">{item.title}</div>
                   <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="w-full md:w-auto">{item.stage}</div>
 
-                  <div className="flex gap-x-4">
+                  <div className="flex flex-wrap gap-x-4 mt-2 md:mt-0">
                     {/* icons */}
                     {item.icons?.map((Icon, iconI) => (
                       <div key={iconI} className="text-2xl text-white">
